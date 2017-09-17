@@ -15,10 +15,10 @@ admin.initializeApp({
 });
 
 module.exports.makeAvailable = function (context, req) {
-  context.log('> > > [index.js:10]', req.query || '');
-  context.log('> > > [index.js:10]', req.body || {});
+  context.log('> > > [index.js:18]', req.query || '');
+  context.log('> > > [index.js:19]', req.body || {});
 
-  const data = req.query || {};
+  const data = req.body || {};
   console.log('> > > [index.js:11]', `${data.msisdn}/available`);
   admin.database().ref(`/availables_log`).push(data).then(
     (snapshot) => {
