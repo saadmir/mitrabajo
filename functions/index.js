@@ -10,11 +10,12 @@ module.exports = function (context, req) {
 
   if (req.query.name || (req.body && req.body.name)) {
     const name = req.query.name || req.body.name;
-    nexmo.message.sendSms('saad', '4153356477', `wassup ${name}`, {}, function() {
-      console.log('> > > [index.js:25]', 'sensSms', arguments);
+    nexmo.message.sendSms('saad', '14153356477', `wassup ${name}`, {}, function() {
+      console.log('> > > [index.js:14] sensSms');
+      console.log('> > > [index.js:15] sensSms', arguments);
       context.res = {
             // status: 200, /* Defaults to 200 */
-            body: "Hello There " + name
+            body: "Hello Hello " + name
       };
       context.done();
     });
