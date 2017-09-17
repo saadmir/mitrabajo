@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight=".5"
+        android:id="@+id/linearLayout6">
+
+        <SearchView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.2"
+            />
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/messenger"
+            android:layout_weight=".1"
+            android:background="#FFFFFF"
+            android:paddingRight="4dp"
+            android:scaleType="fitCenter"
+            />
+
+        <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/account"
+            android:scaleType="fitCenter"
+            android:background="#FFFFFF"
+            android:paddingLeft="4dp"
+            android:layout_weight=".1"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight=".3"
+        android:layout_below="@id/linearLayout6"
+        android:id="@+id/linearLayout1">
+
+        <Button
+            android:id="@+id/AvailableNow"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/linearLayout6"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="#4CAF50"
+            android:elevation="0dp"
+            android:paddingBottom="4dp"
+            android:paddingTop="4dp"
+            android:text="Available Now"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/FutureWork"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/linearLayout6"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/AvailableNow"
+            android:layout_weight="1"
+            android:background="#4CAF50"
+            android:paddingBottom="4dp"
+            android:paddingTop="4dp"
+            android:text="Future Work"
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="5"
+        android:paddingTop="6dp"
+        android:padding="4dp"
+        android:layout_below="@id/linearLayout6"
+        android:id="@+id/linearLayout2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginRight="7dp"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:layout_below="@id/linearLayout1"
+            android:id="@+id/linearLayout3">
+
+            <ImageButton
+                android:id="@+id/imageButton3"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_marginRight="5dp"
+                android:layout_gravity="center"
+                android:scaleType="fitCenter"
+                android:onClick="nextScreen"
+                android:src="@drawable/babysitter2" />
+
+            <EditText
+                android:id="@+id/editText5"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:ems="7"
+                android:inputType="textPersonName"
+                android:textSize="12sp"
+                android:textAlignment="center"
+                android:text="Babysitter" />
+
+            <ImageButton
+                android:id="@+id/imageButton4"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_marginRight="5dp"
+                android:layout_gravity="center"
+                android:layout_alignParentLeft="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/carpentar"
+                android:onClick="nextScreen"/>
+
+
+            <EditText
+                android:id="@+id/editText6"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textSize="12sp"
+                android:textAlignment="center"
+                android:text="Carpenter" />
+
+            <ImageButton
+                android:id="@+id/imageButton5"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_marginRight="5dp"
+                android:layout_alignParentLeft="true"
+                android:layout_gravity="center"
+                android:scaleType="fitCenter"
+                android:src="@drawable/gardening"
+                android:onClick="nextScreen"/>
+
+            <EditText
+                android:id="@+id/editText7"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:textSize="12sp"
+                android:textAlignment="center"
+                android:text="Gardener" />
+
+            <ImageButton
+                android:id="@+id/imageButton6"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:layout_marginRight="5dp"
+                android:onClick="nextScreen"
+                android:layout_alignParentLeft="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/maid" />
+
+            <EditText
+                android:id="@+id/editText8"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textSize="12sp"
+                android:textAlignment="center"
+                android:text="Maid" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginLeft="7dp"
+            android:layout_weight="1"
+            android:padding="4dp"
+            android:layout_below="@id/linearLayout1"
+            android:id="@+id/linearLayout4">
+
+            <ImageButton
+                android:id="@+id/imageButton7"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:layout_marginRight="7dp"
+                android:layout_alignParentLeft="true"
+                android:onClick="nextScreen"
+                android:scaleType="fitCenter"
+                android:src="@drawable/mechanic" />
+
+            <EditText
+                android:id="@+id/editText9"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textSize="12sp"
+                android:textAlignment="center"
+                android:text="Mechanic" />
+
+            <ImageButton
+                android:id="@+id/imageButton8"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_marginRight="5dp"
+                android:layout_gravity="center"
+                android:layout_alignParentLeft="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/plumber"
+                android:onClick="nextScreen"/>
+
+            <EditText
+                android:id="@+id/editText10"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:textSize="12sp"
+                android:textAlignment="center"
+                android:text="Plumber" />
+
+            <ImageButton
+                android:id="@+id/imageButton9"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:layout_marginRight="5dp"
+                android:layout_alignParentLeft="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/tailor"
+                android:onClick="nextScreen"/>
+
+            <EditText
+                android:id="@+id/editText11"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:textSize="12sp"
+                android:textAlignment="center"
+                android:text="Tailor" />
+
+            <ImageButton
+                android:id="@+id/imageButton10"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:layout_marginRight="5dp"
+                android:layout_alignParentLeft="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/tutor"
+                android:onClick="nextScreen"/>
+
+            <EditText
+                android:id="@+id/editText12"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textSize="12sp"
+                android:textAlignment="center"
+                android:text="Tutor" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

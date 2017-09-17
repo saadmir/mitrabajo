@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight=".5"
+        android:id="@+id/linearLayout6">
+
+        <SearchView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            />
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/messenger"
+            android:layout_weight=".1"
+            android:background="#FFFFFF"
+            android:paddingRight="4dp"
+            android:scaleType="fitCenter"
+            />
+
+        <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/account"
+            android:scaleType="fitCenter"
+            android:background="#FFFFFF"
+            android:paddingLeft="4dp"
+            android:layout_weight=".1"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight=".3"
+        android:layout_below="@id/linearLayout6"
+        android:id="@+id/linearLayout1">
+
+        <Button
+            android:id="@+id/AvailableNow"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/linearLayout6"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="#4CAF50"
+            android:elevation="0dp"
+            android:paddingBottom="4dp"
+            android:paddingTop="4dp"
+            android:text="Available Now"
+            android:textColor="@android:color/white"
+            android:onClick="AvailableNow"/>
+
+        <Button
+            android:id="@+id/FutureWork"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/linearLayout6"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/AvailableNow"
+            android:layout_weight="1"
+            android:background="#4CAF50"
+            android:paddingBottom="4dp"
+            android:paddingTop="4dp"
+            android:text="Future Work"
+            android:textColor="@android:color/white"
+            android:onClick="FutureWork"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/linearLayout1"
+        android:id="@+id/linearLayout2">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_alignParentLeft="true"
+            android:scaleType="centerInside"
+            android:layout_weight="1"
+            android:src="@drawable/gardener" />
+
+        <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/rectangle"
+        android:orientation="vertical"
+        android:layout_marginLeft="5dp"
+        android:layout_weight="3"
+        android:padding="4dp"
+        android:layout_below="@id/linearLayout1"
+        android:id="@+id/linearLayout3">
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:textSize="12sp"
+            android:layout_weight=".3"
+            android:text="Skills:Gardening &amp; Horticulture" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:textSize="12sp"
+                android:layout_weight=".4"
+                android:text="Response Time: 2 hours" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"
+            android:scaleType="fitStart"
+            android:src="@drawable/star_rating" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".4"
+            android:background="#4CAF50"
+            android:textColor="@android:color/white"
+            android:text="Message Now"
+            android:onClick="Message"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_below="@id/linearLayout2"
+        android:layout_weight="3"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp"
+        android:id="@+id/linearLayout5">
+
+        <com.mapquest.mapping.maps.MapView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/mapquestMapView"
+            android:onClick="AvailableNow"
+            app:mapquest_app_key="AjwvQez8NXg8ZDvR"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>
