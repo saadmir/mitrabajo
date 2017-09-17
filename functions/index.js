@@ -24,14 +24,14 @@ module.exports.makeAvailable = function (context, req) {
     (snapshot) => {
       context.log('> > > [firebase]');
       _makeAvailable(data.msisdn, data.location || {});
-      nexmo.message.sendSms('12016728774', '14153356477', `wassup ${data.msisdn}`, function() {
-        context.res = {
-          // status: 200, /* Defaults to 200 */
-          body: "Hello Hello " + name
-        };
-        context.done();
-      // context.res.redirect(303, snapshot.ref);
-      });
+      // nexmo.message.sendSms('12016728774', '14153356477', `wassup ${data.msisdn}`, function() {
+      //   context.res = {
+      //     // status: 200, /* Defaults to 200 */
+      //     body: "Hello Hello " + name
+      //   };
+      //   context.done();
+      // // context.res.redirect(303, snapshot.ref);
+      // });
     }
   );
 };
