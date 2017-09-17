@@ -7,14 +7,14 @@ const nexmo = new Nexmo({
 
 module.exports = function (context, req) {
   context.log('JavaScript HTTP trigger function processed a request.');
-  console.log('> > > [index.js:10]', req.query.name);
-  console.log('> > > [index.js:11]', (req.body || {}).name || '');
+  context.log('> > > [index.js:10]', req.query.name);
+  context.log('> > > [index.js:11]', (req.body || {}).name || '');
 
   if (req.query.name || (req.body && req.body.name)) {
     const name = req.query.name || req.body.name;
     nexmo.message.sendSms('saad', '14153356477', `wassup ${name}`, function() {
-      console.log('> > > [index.js:14] sensSms');
-      console.log('> > > [index.js:15] sensSms', arguments);
+      context.log('> > > [index.js:14] sensSms');
+      context.log('> > > [index.js:15] sensSms', arguments);
       context.res = {
             // status: 200, /* Defaults to 200 */
             body: "Hello Hello " + name
