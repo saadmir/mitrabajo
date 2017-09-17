@@ -1,5 +1,5 @@
 # MiTrabajo
-online marketplace for day labrorers
+online marketplace for day labor
 
 Submitted to TechCrunch Disrupt SF 2017.
 
