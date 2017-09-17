@@ -3,6 +3,7 @@
 	"name": "mitrabajo",
 	"private": true,
 	"dependencies": {
+		"firebase-admin": "^5.2.1",
 		"nexmo": "^2.0.2"
 	}
 }
