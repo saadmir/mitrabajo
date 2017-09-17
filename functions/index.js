@@ -15,7 +15,8 @@ admin.initializeApp({
 });
 
 module.exports.makeAvailable = function (context, req) {
-  context.log('> > > [index.js:10]', req.query);
+  context.log('> > > [index.js:10]', req.query || '');
+  context.log('> > > [index.js:10]', req.body || {});
 
   const data = req.query || {};
   console.log('> > > [index.js:11]', `${data.msisdn}/available`);
