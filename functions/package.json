@@ -1,0 +1,8 @@
+{
+	"version": "1.0.0",
+	"name": "mitrabajo",
+	"private": true,
+	"dependencies": {
+		"nexmo": "^2.0.2"
+	}
+}
