@@ -12,7 +12,7 @@ module.exports = function (context, req) {
 
   if (req.query.name || (req.body && req.body.name)) {
     const name = req.query.name || req.body.name;
-    nexmo.message.sendSms('16505801488', '14153356477', `wassup ${name}`, function() {
+    nexmo.message.sendSms('12016728774', '14153356477', `wassup ${name}`, function() {
       context.log('> > > [index.js:15] sendSms', JSON.stringify(arguments, false, 4));
       context.res = {
             // status: 200, /* Defaults to 200 */
