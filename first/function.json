@@ -5,8 +5,7 @@
       "webHookType": "",
       "type": "httpTrigger",
       "direction": "in",
-      "name": "req",
-      "methods": [ "post", "get" ]
+      "name": "req"
     },
     {
       "type": "http",
